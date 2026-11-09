@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <title>FIT2102 A1 2025</title>
+    </head>
+    <body>
+        <h1>Flappy Birb</h1>
+        <main id="main" class="flex col">
+            <svg id="svgCanvas" width="600" height="400">
+                <g id="gameOver" visibility="hidden">
+                
+                    <rect
+                        x="225"
+                        y="176"
+                        fill="white"
+                        height="48"
+                        width="150"
+                    ></rect>
+                    <text x="235" y="206">Game Over</text>
+                
+                </g>
+
+                <g id="gameWon" visibility="hidden">
+                
+                    <rect
+                        x="225"
+                        y="176"
+                        fill="white"
+                        height="48"
+                        width="150"
+                    ></rect>
+                    <text x="235" y="206">Game Won</text>
+                
+                </g>
+
+                <g id="replay" visibility="hidden">
+                
+                    <rect
+                        x="225"
+                        y="245"
+                        fill="white"
+                        height="48"
+                        width="200"
+                    ></rect>
+                    <text x="235" y="270">replay (press r)</text>
+                
+                </g>
+
+                <g id="text" visibility="hidden">
+                
+                    <text x="10" y="50">Try to press G</text>
+                
+                </g>
+
+            </svg>
+            <div id="sideBar" class="flex col">
+                <div id="info" class="flex col">
+                    <div class="text">
+                        <span class="left">Lives: </span>
+                        <span class="right" id="livesText">...</span>
+                    </div>
+                    <div class="text">
+                        <span class="left">Score: </span>
+                        <span class="right" id="scoreText">...</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="./src/main.ts"></script>
+    </body>
+</html>
